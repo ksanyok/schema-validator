@@ -1,0 +1,56 @@
+{
+  "name": "@promopilot/schema-validator",
+  "version": "1.0.0",
+  "description": "Validate schema.org JSON-LD from the command line: JSON syntax, @context, required and recommended properties for Google rich result types (Product, Offer, Article, FAQPage, BreadcrumbList, Organization, LocalBusiness, Event, Recipe, VideoObject, JobPosting…), ISO dates and durations, prices, currencies and URLs. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "schema-org",
+    "json-ld",
+    "structured-data",
+    "rich-results",
+    "rich-snippets",
+    "schema-validator",
+    "seo",
+    "technical-seo",
+    "google-search",
+    "seo-tools",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/schema-validator.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=schema-validator",
+  "bugs": {
+    "url": "https://github.com/ksanyok/schema-validator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/schema-validator.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "schema-validator": "bin/cli.js"
+  },
+  "files": [
+    "examples",
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

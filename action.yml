@@ -1,0 +1,16 @@
+name: "Schema Validator by PromoPilot"
+description: "Validate schema.org JSON-LD structured data in pages or build output."
+author: "Alexandr Krikun"
+branding:
+  icon: "code"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the schema-validator CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run schema-validator
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}
